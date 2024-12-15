@@ -1,0 +1,123 @@
+/* General reset and body layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #222;
+  text-align: center;
+}
+
+.app-container {
+  background: linear-gradient(to right, #0344f6, #f414f0);
+  color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 550px;
+  width: 100%;
+}
+
+.app-title {
+  font-size: 48px;
+  color: #ffeb3b; /* Bright yellow */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.name {
+  font-size: 24px;
+  color: #f1f1f1;
+  margin-top: 20px;
+}
+
+.name-highlight {
+  color: #ff4081; /* Vibrant pink */
+  font-weight: bold;
+}
+
+.day-label {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.date {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffeb3b; /* Bright yellow for date */
+  margin-top: 10px;
+}
+
+.random-number-label {
+  font-size: 20px;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.random-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f7ff07; /* Green color for emphasis */
+  margin-top: 15px;
+}
+
+/* Add hover effect */
+.app-title:hover,
+.name-highlight:hover,
+.random-number:hover {
+  transform: scale(1.05);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 30px;
+  }
+
+  .app-title {
+    font-size: 36px;
+  }
+
+  .name,
+  .random-number-label,
+  .day-label {
+    font-size: 18px;
+  }
+
+  .date,
+  .random-number {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 32px;
+  }
+
+  .name,
+  .random-number-label,
+  .day-label {
+    font-size: 16px;
+  }
+
+  .date,
+  .random-number {
+    font-size: 22px;
+  }
+}
